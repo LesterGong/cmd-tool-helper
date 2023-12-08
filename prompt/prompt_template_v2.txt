@@ -1,0 +1,8 @@
+prompt_template_v2.txt
+
+!<INPUT 0>! -- Requirements
+
+<commentblockmarker>###</commentblockmarker>
+Task: Provide the specific Linux command line that fulfills the given requirement. Only the command line as a string is requested. No explanations or additional information are required.
+
+Requirement: !<INPUT 0>!

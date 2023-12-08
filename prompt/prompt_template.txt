@@ -1,0 +1,9 @@
+prompt_template.txt
+
+!<INPUT 0>! -- requirements
+
+<commentblockmarker>###</commentblockmarker>
+Task -- Please give the specific Linux command line according to the given requirements.
+Note: You just need to give the command line in the form of a string, no other extra information is needed.
+
+requirements: !<INPUT 0>!
