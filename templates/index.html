@@ -1,0 +1,48 @@
+<!-- Save this as templates/index.html for Flask -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Command Line Tool Helper</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, textarea, input[type="text"], input[type="submit"] {
+            margin: 10px;
+        }
+        textarea, input[type="text"] {
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+            resize: none; /* Disable manual resize */
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <label for="requirements">Please enter your requirements:</label>
+        <input type="text" name="requirements" id="requirements" value="{{ inputs['requirements'] }}"><br>
+        
+        <label for="answer">Answer:</label>
+        <textarea name="answer" id="answer" readonly>{{ inputs['answer'] }}</textarea><br>
+        
+        <label for="execution">Result of execution:</label>
+        <textarea name="execution" id="execution" readonly>{{ inputs['execution'] }}</textarea><br>
+        
+        <input type="submit" name="confirm" value="Confirm">
+        <input type="submit" name="cancel" value="Cancel">
+    </form>
+</body>
+</html>
