@@ -6,8 +6,7 @@ os.environ["http_proxy"] = "http://127.0.0.1:7890"
 os.environ["https_proxy"] = "http://127.0.0.1:7890"
 
 client = OpenAI(
-    organization="org-LsauuKtncHakIhdjOdmqRLOk",
-    api_key="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"
+    api_key="your api_key"
 )
 
 

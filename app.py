@@ -4,7 +4,7 @@ from request_and_execute import construct_and_request, execute
 
 app = Flask(__name__)
 
-# Temporary storage for demonstration purposes. In a real-world scenario, you might use a database.
+# Temporary storage for demonstration purposes.
 inputs = {
     "requirements": "",
     "answer": "",
